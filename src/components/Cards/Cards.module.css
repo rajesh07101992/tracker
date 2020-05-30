@@ -22,7 +22,7 @@
   
   .deaths{
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
-    box-shadow: 5px 7px 5px 7px #888888 !important;
+    box-shadow: 5px 8px 5px 8px #888888 !important;
   }
   
   @media only screen and (max-width: 770px) {
