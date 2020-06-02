@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Cards, Chart, CountryPicker} from './components';
 import styles from './App.module.css'
 import {fetchData} from './api'
+import Footer from './components/Footer/Footer'
 
 class App extends Component {
 
@@ -33,7 +34,8 @@ class App extends Component {
                 <img  src={require('./images/image.png')} className={styles.image} alt="COVID-19"/><br></br><br></br>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 <Cards data={data}/>              
-                <Chart data={data} country={country}/>               
+                <Chart data={data} country={country}/> <br></br><br></br><br></br><br></br>
+                <Footer/>              
             </div>
         );
     }
