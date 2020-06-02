@@ -12,6 +12,9 @@ class App extends Component {
   
     async componentDidMount(){
         const fetchedData = await fetchData();
+        
+
+        
 
         this.setState({data:fetchedData});
     }
@@ -27,11 +30,10 @@ class App extends Component {
         const {data, country} =  this.state;
         return (
             <div className={styles.container}>
-                <img  src={require('./images/image.png')} className={styles.image} alt="COVID-19"/>
-                <Cards data={data}/>
+                <img  src={require('./images/image.png')} className={styles.image} alt="COVID-19"/><br></br><br></br>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
-                <Chart data={data} country={country}/>
-               
+                <Cards data={data}/>              
+                <Chart data={data} country={country}/>               
             </div>
         );
     }
